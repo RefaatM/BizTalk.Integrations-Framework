@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFDF4B69-1B84-421A-A79B-6C4509224687}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GT.BizTalk.Framework.PipelineComponents</RootNamespace>
+    <AssemblyName>GT.BizTalk.Framework.PipelineComponents</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\..\..\..\..\..\..\Shared\downloads\DE_CSharp_Managed_Rules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\GT.BizTalk.Framework.PipelineComponents.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GT.BizTalk.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Expressions, Version=0.1.3.0, Culture=neutral, PublicKeyToken=8361ed6c3747d17c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Expressions.0.1.3.0\lib\net20\Expressions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Bam.EventObservation, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Tracking\Microsoft.BizTalk.Bam.EventObservation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Component.Utilities, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.BizTalk.Component.Utilities\3.0.1.0__31bf3856ad364e35\Microsoft.BizTalk.Component.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Microsoft.BizTalk.GlobalPropertySchemas.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Messaging, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Microsoft.BizTalk.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.BizTalk.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline.Components, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Pipeline Components\Microsoft.BizTalk.Pipeline.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Streaming, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Microsoft.BizTalk.Streaming.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.XPathReader, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.BizTalk.XPathReader\3.0.1.0__31bf3856ad364e35\Microsoft.BizTalk.XPathReader.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EnterpriseSingleSignOn.Interop, Version=9.0.1000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\Enterprise Single Sign-On\SDK\Bin\Microsoft.EnterpriseSingleSignOn.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ESB.Itinerary, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ESB.Itinerary.OM.V1, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk ESB Toolkit\Bin\Microsoft.Practices.ESB.Itinerary.OM.V1.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.RuleEngine, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Common Files\Microsoft BizTalk\Microsoft.RuleEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.XLANGs.RuntimeTypes, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Microsoft.XLANGs.RuntimeTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archiver.cs" />
+    <Compile Include="BasePipelineComponent.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="ContextProperties.cs" />
+    <Compile Include="ContextProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItineraryConfigurator.cs" />
+    <Compile Include="GenericProcessor.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyBagHelper.cs" />
+    <Compile Include="Design\EncodingListControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\EncodingTypeConverter.cs" />
+    <Compile Include="Design\EncodingTypeEditor.cs" />
+    <Compile Include="HttpDisassembler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyPromoter.cs" />
+    <Compile Include="RequestResponse.cs" />
+    <Compile Include="XmlPropertyCollectionSerializer.cs" />
+    <Compile Include="XPathProperty.cs" />
+    <Compile Include="XslTransformer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GT.BizTalk.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AddNamespaceIcon.png" />
+    <None Include="packages.config" />
+    <None Include="Resources\XslTransformerIcon2.png" />
+    <None Include="Resources\XslTransformerIcon1.png" />
+    <None Include="Resources\XPathPropertyPromoterIcon1.png" />
+    <None Include="Resources\XmlElementTranslator1.png" />
+    <None Include="Resources\SSOTicketIssuerIcon1.png" />
+    <None Include="Resources\Auditcon.png" />
+    <None Include="Resources\ReplaceNamespaceIcon1.png" />
+    <None Include="Resources\RemoveNamespaceIcon1.png" />
+    <None Include="Resources\pgpencryptericon1.png" />
+    <None Include="Resources\pgpdecryptericon1.png" />
+    <None Include="Resources\FileRenamerIcon1.png" />
+    <None Include="Resources\FFSchemaResolverDisassemblerIcon1.png" />
+    <None Include="Resources\EncodingTranscoderIcon1.png" />
+    <None Include="Resources\EmptyMessageHandlerIcon1.png" />
+    <None Include="Resources\DiacriticsReplacerIcon1.png" />
+    <None Include="Resources\ContextPropertyPromoterIcon1.png" />
+    <None Include="Resources\CharacterFilterIcon1.png" />
+    <None Include="Resources\BREPropertyPromoterIcon1.png" />
+    <None Include="Resources\BAMTrackerIcon1.png" />
+    <None Include="Resources\ArchiverIcon1.png" />
+    <None Include="Resources\AddNamespaceIcon1.png" />
+    <Content Include="Resources\ArchiverIcon.png" />
+    <Content Include="Resources\BAMTrackerIcon.png" />
+    <Content Include="Resources\BREPropertyPromoterIcon.png" />
+    <Content Include="Resources\CharacterFilterIcon.png" />
+    <None Include="Resources\consumemessageicon.gif" />
+    <None Include="Resources\consumemessageicon1.gif" />
+    <None Include="Resources\ConsumeMessageIcon2.gif" />
+    <None Include="Resources\ConsumeMessageIcon11.gif" />
+    <None Include="Resources\ConsumeMessageIcon111.gif" />
+    <Content Include="Resources\ContextPropertyPromoterIcon.png" />
+    <None Include="Resources\datatypechannelicon.gif" />
+    <None Include="Resources\DatatypeChannelIcon1.gif" />
+    <Content Include="Resources\DiacriticsReplacerIcon.png" />
+    <None Include="Resources\dynamicroutericon.gif" />
+    <None Include="Resources\DynamicRouterIcon1.gif" />
+    <Content Include="Resources\EmptyMessageHandlerIcon.png" />
+    <Content Include="Resources\EncodingTranscoderIcon.png" />
+    <Content Include="Resources\FFSchemaResolverDisassemblerIcon.png" />
+    <None Include="Resources\FFSchemaResolverDisassemblerIcon11.png" />
+    <Content Include="Resources\FileRenamerIcon.png" />
+    <None Include="Resources\invalidmessagechannelicon.gif" />
+    <None Include="Resources\messagefiltericon.gif" />
+    <None Include="Resources\messageselectoricon.gif" />
+    <None Include="Resources\MessageSelectorIcon1.gif" />
+    <None Include="Resources\InvalidMessageChannelIcon1.gif" />
+    <None Include="Resources\MessageFilterIcon1.gif" />
+    <Content Include="Resources\PGPDecrypterIcon.png" />
+    <Content Include="Resources\PGPEncrypterIcon.png" />
+    <Content Include="Resources\RemoveNamespaceIcon.png" />
+    <Content Include="Resources\ReplaceNamespaceIcon.png" />
+    <None Include="Resources\requestreplyicon.bmp" />
+    <None Include="Resources\RequestReplyIcon1.bmp" />
+    <Content Include="Resources\SendPortRetryIcon.png" />
+    <None Include="Resources\splittericon.gif" />
+    <None Include="Resources\SplitterIcon1.gif" />
+    <Content Include="Resources\SSOTicketIssuerIcon.png" />
+    <Content Include="Resources\XmlElementTranslator.png" />
+    <Content Include="Resources\XPathPropertyPromoterIcon.png" />
+    <Content Include="Resources\XslTransformerIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Components\GT.BizTalk.Framework.BizTalk\GT.BizTalk.Framework.BizTalk.csproj">
+      <Project>{8c5e448c-6f44-4769-bc76-9e5fd7dbcbe5}</Project>
+      <Name>GT.BizTalk.Framework.BizTalk</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Components\GT.BizTalk.Framework.Core\GT.BizTalk.Framework.Core.csproj">
+      <Project>{c0b4f29b-5199-4c06-949a-03d134c325c1}</Project>
+      <Name>GT.BizTalk.Framework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>CALL "$(DevEnvDir)..\Tools\vsvars32.bat" &gt; NUL
+GACUTIL /u "$(TargetName)"
+GACUTIL /if "$(TargetPath)"
+net stop "BizTalk Service BizTalk Group : BizTalkServerApplication"
+xcopy "$(TargetPath)" "%25BTSINSTALLPATH%25\Pipeline Components" /d /y 
+XCOPY "$(TargetPath)" "$(SolutionDir)..\..\Libs\$(Configuration)\DE.DAXFSA.Framework\" /I /R /Y
+iisreset
+net Start  "BizTalk Service BizTalk Group : BizTalkServerApplication"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

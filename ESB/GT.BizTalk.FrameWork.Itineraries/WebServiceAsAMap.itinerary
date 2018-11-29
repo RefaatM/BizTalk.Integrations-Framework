@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<itineraryModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="6187a534-2132-42bb-afac-6f60f8b16580" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;XmlExporter&quot;&gt;&#xD;&#xA;    &lt;File&gt;C:\Users\MRefaat\Documents\My Itineraries\WebServiceAsAMap.xml&lt;/File&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;DbExporter&quot;&gt;&#xD;&#xA;    &lt;Status&gt;Deployed&lt;/Status&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="WebServiceAsAMap" isRequestResponse="true" exportMode="Strict" modelExporter="Exporter|Database Itinerary Exporter|{2ed729f7-1700-4755-a307-d83a358390fa}" encryptionCertificate="My;CurrentUser;" requireEncryptionCertificate="false" xmlns="http://schemas.microsoft.com/dsltools/ItineraryDsl">
+  <itineraryServices>
+    <itineraryModelHasItineraryServices Id="f442e3d4-04c5-45c6-830a-505d4ee9ed2f">
+      <itineraryService Id="3026cc04-324f-442c-a388-4a7182278b0d" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;MessagingItineraryService&quot;&gt;&#xD;&#xA;    &lt;ServiceName&gt;Microsoft.Practices.ESB.Services.Transform&lt;/ServiceName&gt;&#xD;&#xA;    &lt;ServiceId&gt;cfbe36c5-d85c-44e9-9549-4a7abf2106c5&lt;/ServiceId&gt;&#xD;&#xA;    &lt;ServiceType&gt;Messaging&lt;/ServiceType&gt;&#xD;&#xA;    &lt;Container&gt;&#xD;&#xA;      &lt;Name&gt;WebService&lt;/Name&gt;&#xD;&#xA;      &lt;Handler&gt;receiveInbound&lt;/Handler&gt;&#xD;&#xA;    &lt;/Container&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="MapMessage" isRequestResponse="true" itineraryServiceExtender="Messaging|Messaging Extender|{a3c184e3-04b5-4aa0-bef4-a1b41f3d9e76}" isTrackingEnabled="true">
+        <resolvers>
+          <itineraryServiceHasResolvers Id="b4b279c3-cb5f-4954-adc5-2faf0e059463">
+            <resolver Id="761bb0c4-9f44-4b6d-b805-e26d65ee603b" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;ObjectExtenders xsi:type=&quot;StaticResolver&quot;&gt;&lt;JaxRpcResponse&gt;false&lt;/JaxRpcResponse&gt;&lt;TransformType&gt;GT.BizTalk.Facades.FireEngine.GetCustomerAPBalanceMap,GT.BizTalk.Facades.FireEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fcad0e06d7be6a58&lt;/TransformType&gt;&lt;/ObjectExtenders&gt;&lt;/ObjectExtenderContainer&gt;" name="Map" resolverImplementation="STATIC|Static Resolver Extension|{5761a0bc-cbe3-47e0-adf7-bb10c4e226fe}" />
+          </itineraryServiceHasResolvers>
+        </resolvers>
+        <targetItineraryService>
+          <itineraryServiceReferencesTargetItineraryService Id="69bd5715-08cd-4d1d-89bf-7b80ff314798">
+            <itineraryServiceMoniker Id="27ebe84c-7bd4-486c-8c6f-d3dc891552eb" />
+          </itineraryServiceReferencesTargetItineraryService>
+        </targetItineraryService>
+      </itineraryService>
+    </itineraryModelHasItineraryServices>
+    <itineraryModelHasItineraryServices Id="96150d07-2c3a-4c14-ad64-47e8196ed9cf">
+      <itineraryService Id="27ebe84c-7bd4-486c-8c6f-d3dc891552eb" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;MessagingItineraryService&quot;&gt;&#xD;&#xA;    &lt;ServiceName&gt;GT.BizTalk.Framework.ESBServices.AsyncRouter&lt;/ServiceName&gt;&#xD;&#xA;    &lt;ServiceId&gt;86BB8F8C-ECBD-430A-9400-4730BD72ED1D&lt;/ServiceId&gt;&#xD;&#xA;    &lt;ServiceType&gt;Messaging&lt;/ServiceType&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;AsyncRouterExtender&quot;&gt;&#xD;&#xA;    &lt;ServiceName&gt;GT.BizTalk.Framework.ESBServices.AsyncRouter&lt;/ServiceName&gt;&#xD;&#xA;    &lt;ServiceId&gt;86BB8F8C-ECBD-430A-9400-4730BD72ED1D&lt;/ServiceId&gt;&#xD;&#xA;    &lt;ServiceType&gt;Messaging&lt;/ServiceType&gt;&#xD;&#xA;    &lt;IsDirectSynchronousACK&gt;true&lt;/IsDirectSynchronousACK&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="Routeback" isRequestResponse="false" itineraryServiceExtender="AsyncRouter|AsyncRouter Extender|{6fedcf98-ee5a-4b17-8baa-187f014909d6}" isTrackingEnabled="true">
+        <resolvers>
+          <itineraryServiceHasResolvers Id="afb97f43-9ad9-481b-87d3-f460bfbc4784">
+            <resolver Id="21ee0f33-d7d1-42bf-984e-0ef62b3f6168" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;ObjectExtenders xsi:type=&quot;StaticResolver&quot;&gt;&lt;TransportType&gt;WCF-BasicHttp&lt;/TransportType&gt;&lt;TransportLocation&gt;Http:\\localhost&lt;/TransportLocation&gt;&lt;JaxRpcResponse&gt;false&lt;/JaxRpcResponse&gt;&lt;TargetNamespace&gt;http:\\localhost&lt;/TargetNamespace&gt;&lt;/ObjectExtenders&gt;&lt;/ObjectExtenderContainer&gt;" name="ResolverRoutingBack" resolverImplementation="STATIC|Static Resolver Extension|{5761a0bc-cbe3-47e0-adf7-bb10c4e226fe}" />
+          </itineraryServiceHasResolvers>
+        </resolvers>
+        <responseForOnRamp>
+          <responseReferencedByOnRamp Id="a91e3995-dec6-4952-90b3-e1a56a2f4f52">
+            <onRampMoniker Id="cb53c185-60d1-4a34-8320-a952a9f56ff8" />
+          </responseReferencedByOnRamp>
+        </responseForOnRamp>
+      </itineraryService>
+    </itineraryModelHasItineraryServices>
+  </itineraryServices>
+  <onRamp>
+    <itineraryModelHasOnRamp Id="1463cbb5-d6a0-4879-b148-1b9c37f69bea">
+      <onRamp Id="cb53c185-60d1-4a34-8320-a952a9f56ff8" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;OnRampExtender&quot;&gt;&#xD;&#xA;    &lt;BiztalkApplication&gt;GT.BizTalk.WebServices&lt;/BiztalkApplication&gt;&#xD;&#xA;    &lt;ReceivePort&gt;WcfReceivePort_DAXFSAFireEngineServices/DAXFSAFireEngine&lt;/ReceivePort&gt;&#xD;&#xA;    &lt;IsTwoWay&gt;true&lt;/IsTwoWay&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="WebService" extender="On-Ramp|On-Ramp ESB Extender|{3d237d78-fd66-46cd-b892-5a6e1e8ea06d}">
+        <receiveHandlers>
+          <esbServiceReferencesReceiveHandlers Id="6b0d1639-6dd6-4b79-ae70-bb622cf06f7a">
+            <itineraryServiceMoniker Id="3026cc04-324f-442c-a388-4a7182278b0d" />
+          </esbServiceReferencesReceiveHandlers>
+        </receiveHandlers>
+        <request>
+          <onRampReferencesRequest Id="624783e8-09c4-4eb1-861a-57c8a46bfc8e">
+            <itineraryServiceMoniker Id="3026cc04-324f-442c-a388-4a7182278b0d" />
+          </onRampReferencesRequest>
+        </request>
+      </onRamp>
+    </itineraryModelHasOnRamp>
+  </onRamp>
+</itineraryModel>

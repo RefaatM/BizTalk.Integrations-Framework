@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{362322E0-0C46-4A99-AB07-02910313C82E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GT.BizTalk.SSO.AdminMMC</RootNamespace>
+    <AssemblyName>GT.BizTalk.SSO.AdminMMC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <DocumentationFile>bin\Debug\GT.BizTalk.SSO.AdminMMC.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.EnterpriseSingleSignOn.Interop, Version=9.0.1000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Enterprise Single Sign-On\Microsoft.EnterpriseSingleSignOn.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EnterpriseSingleSignOn.UI2">
+      <HintPath>C:\Program Files\Common Files\Enterprise Single Sign-On\Microsoft.EnterpriseSingleSignOn.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ManagementConsole, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.ManagementConsole\3.0.0.0__31bf3856ad364e35\Microsoft.ManagementConsole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI\MMC\AppRootScopeNode.cs" />
+    <Compile Include="Management\Constants.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Management\IPropertyBagExtensions.cs" />
+    <Compile Include="Management\SSOAppConfig.cs" />
+    <Compile Include="Management\SSOAppField.cs" />
+    <Compile Include="Management\SSOAppFieldCollection.cs" />
+    <Compile Include="Serialization\XmlSerializationUtil.cs" />
+    <Compile Include="UI\MMC\SSOListView.cs" />
+    <Compile Include="UI\MMC\SSOScopeNode.cs" />
+    <Compile Include="UI\Controls\AppAccountsPropertyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\AppAccountsPropertyControl.Designer.cs">
+      <DependentUpon>AppAccountsPropertyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\SSOPropertyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\SSOPropertyControl.Designer.cs">
+      <DependentUpon>SSOPropertyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PropertyPages\AppAccountsPropertyPage.cs" />
+    <Compile Include="UI\Controls\AppGeneralPropertyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\AppGeneralPropertyControl.Designer.cs">
+      <DependentUpon>AppGeneralPropertyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PropertyPages\AppGeneralPropertyPage.cs" />
+    <Compile Include="UI\MMC\AppListView.cs" />
+    <Compile Include="UI\MsgBoxUtil.cs" />
+    <Compile Include="UI\Wizard\AppWizardStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Wizard\AppWizardStepAccounts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Wizard\AppWizardStepAccounts.Designer.cs">
+      <DependentUpon>AppWizardStepAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Wizard\AppWizardStepGeneral.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Wizard\AppWizardStepGeneral.Designer.cs">
+      <DependentUpon>AppWizardStepGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PropertyPages\SSOPropertyPage.cs" />
+    <Compile Include="UI\PropertyPages\AppPropertyPageManager.cs" />
+    <Compile Include="UI\MMC\AppScopeNode.cs" />
+    <Compile Include="UI\MMC\SSOAppSnapIn.cs" />
+    <Compile Include="UI\Wizard\AppWizardStepWelcome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Wizard\AppWizardStepWelcome.Designer.cs">
+      <DependentUpon>AppWizardStepWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Wizard\AppWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Wizard\AppWizardForm.Designer.cs">
+      <DependentUpon>AppWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EventArgs.cs" />
+    <Compile Include="UI\Controls\AppFieldPropertyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\AppFieldPropertyControl.Designer.cs">
+      <DependentUpon>AppFieldPropertyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PropertyPages\AppFieldPropertyPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Management\SSOManager.cs" />
+    <Compile Include="Management\SSOAppInfo.cs" />
+    <Compile Include="UI\MMC\AppFieldListView.cs" />
+    <Compile Include="SSOSnapInInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SSOSnapInInstaller.Designer.cs">
+      <DependentUpon>SSOSnapInInstaller.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Controls\AppAccountsPropertyControl.resx">
+      <DependentUpon>AppAccountsPropertyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\AppGeneralPropertyControl.resx">
+      <DependentUpon>AppGeneralPropertyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Wizard\AppWizardStepAccounts.resx">
+      <DependentUpon>AppWizardStepAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Wizard\AppWizardStepGeneral.resx">
+      <DependentUpon>AppWizardStepGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Wizard\AppWizardStepWelcome.resx">
+      <DependentUpon>AppWizardStepWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Wizard\AppWizardForm.resx">
+      <DependentUpon>AppWizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\AppFieldPropertyControl.resx">
+      <DependentUpon>AppFieldPropertyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="GT.BizTalkSSO.AdminMMC.Author.msc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="GT.BizTalk.SSO.AdminMMC.msc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Install.cmd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Schema\SSOAppConfig.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppWizardLargeBitmap.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppWizardSmallBitmap.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>XCOPY "$(TargetDir)*.dll*" "$(SolutionDir)..\..\Libs\$(Configuration)\DE.DAXFSA.Framework\SSOAdminTools\" /I /S /R /Y
+XCOPY "$(TargetDir)*.*msc" "$(SolutionDir)..\..\Libs\$(Configuration)\DE.DAXFSA.Framework\SSOAdminTools\" /I /S /R /Y
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0B4F29B-5199-4C06-949A-03D134C325C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GT.BizTalk.Framework.Core</RootNamespace>
+    <AssemblyName>GT.BizTalk.Framework.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>..\..\..\..\..\..\..\..\Shared\downloads\DE_CSharp_Managed_Rules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\GT.BizTalk.Framework.Core.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GT.BizTalk.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.SemanticLogging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EnterpriseLibrary.SemanticLogging.2.0.1406.1\lib\net45\Microsoft.Practices.EnterpriseLibrary.SemanticLogging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.5.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\CacheableBase.cs" />
+    <Compile Include="Caching\CacheManager.cs" />
+    <Compile Include="Configuration\ConfigSettingsBase.cs" />
+    <Compile Include="Configuration\ConfigurationElementCollection.cs" />
+    <Compile Include="Diagnostics\EventLogHelper.cs" />
+    <Compile Include="ExceptionHandling\ServiceFault.cs" />
+    <Compile Include="GlobalAssemblyInfo.cs" />
+    <Compile Include="Mail\IAttachmentInfo.cs" />
+    <Compile Include="Mail\ILinkedResourceInfo.cs" />
+    <Compile Include="Mail\LinkedResourceInfo.cs" />
+    <Compile Include="Mail\MailUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialization\SerializationHelper.cs" />
+    <Compile Include="Streaming\CharacterFilterStreamTransformer.cs" />
+    <Compile Include="Streaming\DiacriticsReplacerStreamTransformer.cs" />
+    <Compile Include="Streaming\PipeStream.cs" />
+    <Compile Include="Streaming\SelfDeletingFileStream.cs" />
+    <Compile Include="Streaming\StreamExtensions.cs" />
+    <Compile Include="Streaming\StreamTransformer.cs" />
+    <Compile Include="Streaming\StreamTransformerException.cs" />
+    <Compile Include="Streaming\TranscodingStream.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="Tracing\TraceProviderHelper.cs" />
+    <Compile Include="Tracing\TraceProvider.cs" />
+    <Compile Include="Tracing\ExceptionFormatter.cs" />
+    <Compile Include="Tracing\HighResTimer.cs" />
+    <Compile Include="Utilities\DateUtil.cs" />
+    <Compile Include="Utilities\DecimalUtil.cs" />
+    <Compile Include="Utilities\Guard.cs" />
+    <Compile Include="Utilities\GuidUtil.cs" />
+    <Compile Include="Utilities\IntUtil.cs" />
+    <Compile Include="Web\VirtualPathResolver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="GT.BizTalk.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>CALL "$(DevEnvDir)..\Tools\vsvars32.bat" &gt; NUL
+GACUTIL /u "$(TargetName)"
+GACUTIL /if "$(TargetPath)"
+XCOPY "$(TargetPath)" "$(SolutionDir)..\..\Libs\$(Configuration)\DE.DAXFSA.Framework\" /I /R /Y
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

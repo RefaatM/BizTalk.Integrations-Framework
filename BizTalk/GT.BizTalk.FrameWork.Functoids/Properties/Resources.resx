@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FMTDT_BITMAP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FMTDT_BITMAP.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FMTDT_DESC" xml:space="preserve">
+    <value>Formats a string representing a DateTime value. The first parameter is the string representing a DateTime value to be formatted. If the functoid is used with 2 input parameters, the second parameter is the format of the output string. If the functoid is used with 3 parameters, the second parameter is the format of the input string and the third parameter is the format of the output string. If the functoid is used with 4 parameters, the fourth parameter is the default value to return if the parsing of the date fails.</value>
+    <comment>Format Date Time Functoid Description</comment>
+  </data>
+  <data name="FMTDT_NAME" xml:space="preserve">
+    <value>Format Date Time</value>
+    <comment>Format Date Time Functoid Name</comment>
+  </data>
+  <data name="FMTDT_TOOLTIP" xml:space="preserve">
+    <value>Formats a date time string</value>
+    <comment>Format Date Time Functoid Tooltip</comment>
+  </data>
+  <data name="GUIDGEN_BITMAP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GUIDGEN_BITMAP.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GUIDGEN_DESC" xml:space="preserve">
+    <value>Generates a new guid (as string).</value>
+    <comment>Guid Generator Functoid Description</comment>
+  </data>
+  <data name="GUIDGEN_NAME" xml:space="preserve">
+    <value>Guid Generator</value>
+    <comment>Guid Generator Functoid Name</comment>
+  </data>
+  <data name="GUIDGEN_TOOLTIP" xml:space="preserve">
+    <value>Generates a new guid (as string)</value>
+    <comment>Guid Generator Functoid Tooltip</comment>
+  </data>
+  <data name="OCA_BITMAP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OCA_BITMAP.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OCA_DESC" xml:space="preserve">
+    <value>Use the Orchestration Context Accessor functoid to access the context from an orchestration within a map. The first input parameter is the name of the message variable in the orchestration. The second parameter is the context property name. The third parameter is the context property namespace. The fourth parameter is optional and represents the value to be used if the context property is not found.</value>
+    <comment>Orchestration Context Accesor Functoid Description</comment>
+  </data>
+  <data name="OCA_NAME" xml:space="preserve">
+    <value>Orchestration Context Accessor</value>
+    <comment>Orchestration Context Accesor Functoid Name</comment>
+  </data>
+  <data name="OCA_TOOLTIP" xml:space="preserve">
+    <value>Allows access to the context from an orchestration within a map</value>
+    <comment>Orchestration Context Accesor Functoid Tooltip</comment>
+  </data>
+  <data name="STRFORMAT_BITMAP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STRFORMAT_BITMAP.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STRFORMAT_DESC" xml:space="preserve">
+    <value>Use the String Format functoid to format a text using the formatting string and arguments. This functoid accepts two to one hundred input parameters, the first parameter is the formatting string and at least one additional parameter with a value to be formatted.</value>
+    <comment>String Format Functoid Description</comment>
+  </data>
+  <data name="STRFORMAT_NAME" xml:space="preserve">
+    <value>String Format</value>
+    <comment>String Format Functoid Name</comment>
+  </data>
+  <data name="STRFORMAT_TOOLTIP" xml:space="preserve">
+    <value>Format a text using the formatting string and arguments.</value>
+    <comment>String Format Functiod Tooltip</comment>
+  </data>
+  <data name="STRPADLEFT_BITMAP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STRPADLEFT_BITMAP.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STRPADLEFT_DESC" xml:space="preserve">
+    <value>Returns a new string that right-aligns the characters by padding them on the left with a specified character, for a specified total length.</value>
+    <comment>String Pad Left Functoid Description</comment>
+  </data>
+  <data name="STRPADLEFT_NAME" xml:space="preserve">
+    <value>String Pad Left</value>
+    <comment>String Pad Left Functoid Name</comment>
+  </data>
+  <data name="STRPADLEFT_TOOLTIP" xml:space="preserve">
+    <value>Pads the string on the left with the specified character, for the specified total length.</value>
+    <comment>String Pad Left Functoid Tooltip</comment>
+  </data>
+  <data name="STRPADRIGHT_BITMAP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STRPADRIGHT_BITMAP.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STRPADRIGHT_DESC" xml:space="preserve">
+    <value>Returns a new string that left-aligns the characters by padding them on the right with a specified character, for a specified total length.</value>
+    <comment>String Pad Right FunctoidDescription</comment>
+  </data>
+  <data name="STRPADRIGHT_NAME" xml:space="preserve">
+    <value>String Pad Right</value>
+    <comment>String Pad Right Functoid Name</comment>
+  </data>
+  <data name="STRPADRIGHT_TOOLTIP" xml:space="preserve">
+    <value>Pads the string on the right with the specified character, for the specified total length.</value>
+    <comment>String Pad Right Functoid Tooltip</comment>
+  </data>
+  <data name="STRTRIM_BITMAP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STRTRIM_BITMAP.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STRTRIM_DESC" xml:space="preserve">
+    <value>Use the String Trim functoid to remove leading and trailing spaces from a text item. This functoid requires one input parameter.</value>
+    <comment>String Trim Functiod Description</comment>
+  </data>
+  <data name="STRTRIM_NAME" xml:space="preserve">
+    <value>String Trim</value>
+    <comment>String Trim Functiod Name</comment>
+  </data>
+  <data name="STRTRIM_TOOLTIP" xml:space="preserve">
+    <value>Removes leading and trailing spaces from a text item.</value>
+    <comment>String Trim Functiod Tooltip</comment>
+  </data>
+</root>

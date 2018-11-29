@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39FC2A63-7ADD-44FA-9636-345EA83E7E85}</ProjectGuid>
+    <RootNamespace>DE.DAXFSA.FrameWork.Itineraries</RootNamespace>
+    <AssemblyName>DE.DAXFSA.FrameWork.Itineraries</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="GT.BizTalk.FrameWork.Itineraries.itinerary" />
+    <None Include="GT.BizTalk.FrameWork.Itineraries.itinerary.diagram">
+      <DependentUpon>GT.BizTalk.FrameWork.Itineraries.itinerary</DependentUpon>
+    </None>
+    <None Include="WebService2Actions.itinerary" />
+    <None Include="WebService2Actions.itinerary.diagram">
+      <DependentUpon>WebService2Actions.itinerary</DependentUpon>
+    </None>
+    <None Include="WebServiceAsAMap.itinerary" />
+    <None Include="WebServiceAsAMap.itinerary.diagram">
+      <DependentUpon>WebServiceAsAMap.itinerary</DependentUpon>
+    </None>
+    <None Include="WebServiceToFile.itinerary" />
+    <None Include="WebServiceToFile.itinerary.diagram">
+      <DependentUpon>WebServiceToFile.itinerary</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C:\Users\MRefaat\AppData\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Target Name="Build" />
+  <Target Name="Clean" />
+  <Target Name="Rebuild" />
+</Project>

@@ -1,0 +1,1025 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddNamespaceDescription" xml:space="preserve">
+    <value>Adds specified namespace to the root node.</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AddNamespaceIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddNamespaceIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddNamespaceName" xml:space="preserve">
+    <value>GT Add Namespace</value>
+  </data>
+  <data name="AddNamespaceVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="ArchiveFileNamePropertyDescription" xml:space="preserve">
+    <value>The archive file name. Accepts %SourceFileName%, %MessageID% and %datetime:format% macros.</value>
+  </data>
+  <data name="ArchiveFileNamePropertyName" xml:space="preserve">
+    <value>File Archive filename</value>
+  </data>
+  <data name="ArchivePathPropertyDescription" xml:space="preserve">
+    <value>Archiving directory.</value>
+  </data>
+  <data name="ArchivePathPropertyName" xml:space="preserve">
+    <value>Archive path</value>
+  </data>
+  <data name="ArchiverDescription" xml:space="preserve">
+    <value>Pipeline component that allows archiving messages.</value>
+  </data>
+  <data name="ArchiverExceptionMessage" xml:space="preserve">
+    <value>There was a failure archiving the file to "{0}".
+Details: {1}</value>
+  </data>
+  <data name="ArchiverIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArchiverIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ArchiverInvalidArchiveFileName" xml:space="preserve">
+    <value>The archive filename cannot be empty.</value>
+  </data>
+  <data name="ArchiverInvalidMacroError" xml:space="preserve">
+    <value>The macro specified for the archive filename property is invalid: {0}</value>
+  </data>
+  <data name="ArchiverName" xml:space="preserve">
+    <value>GT Archiver</value>
+  </data>
+  <data name="ArchiverPathNotFoundError" xml:space="preserve">
+    <value>The path "{0}" could not be found.</value>
+  </data>
+  <data name="ArchiverVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="BAMActivityPropertyDescription" xml:space="preserve">
+    <value>The BAM activity name to track events for.</value>
+  </data>
+  <data name="BAMActivityPropertyName" xml:space="preserve">
+    <value>BAM activity name</value>
+  </data>
+  <data name="BAMEnableContinuationPropertyDescription" xml:space="preserve">
+    <value>Indicates if a BAM continuation should be enabled.</value>
+  </data>
+  <data name="BAMEnableContinuationPropertyName" xml:space="preserve">
+    <value>Enable continuation</value>
+  </data>
+  <data name="BAMEventsPropertyDescription" xml:space="preserve">
+    <value>Context properties to use as BAM event sources.</value>
+  </data>
+  <data name="BAMEventsPropertyName" xml:space="preserve">
+    <value>BAM events</value>
+  </data>
+  <data name="BAMTrackerDescription" xml:space="preserve">
+    <value>BAM activity tracker pipeline component.</value>
+  </data>
+  <data name="BAMTrackerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BAMTrackerIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BAMTrackerName" xml:space="preserve">
+    <value>DE BAM Tracker</value>
+  </data>
+  <data name="BAMTrackerVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="BAMUseContinuationPropertyDescription" xml:space="preserve">
+    <value>Indicates if a BAM continuation should be used.</value>
+  </data>
+  <data name="BAMUseContinuationPropertyName" xml:space="preserve">
+    <value>Use continuation</value>
+  </data>
+  <data name="BREPropertyPromoterDescription" xml:space="preserve">
+    <value>This component promotes properties using a BRE policy.</value>
+  </data>
+  <data name="BREPropertyPromoterIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BREPropertyPromoterIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BREPropertyPromoterName" xml:space="preserve">
+    <value>DE BRE Property Promoter</value>
+  </data>
+  <data name="BREPropertyPromoterVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="BufferSizePropertyDescription" xml:space="preserve">
+    <value>The size in bytes of the buffer used to read from the input message stream.</value>
+  </data>
+  <data name="BufferSizePropertyName" xml:space="preserve">
+    <value>Buffer size</value>
+  </data>
+  <data name="CharacterFilterDescription" xml:space="preserve">
+    <value>Pipeline component to filter characters from the message.</value>
+  </data>
+  <data name="CharacterFilterIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CharacterFilterIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CharacterFilterInvalidProperty" xml:space="preserve">
+    <value>The filter cannot be empty.</value>
+  </data>
+  <data name="CharacterFilterName" xml:space="preserve">
+    <value>DE Character Filter</value>
+  </data>
+  <data name="CharacterFilterPropertyDescription" xml:space="preserve">
+    <value>Space separated list of characters to filter.</value>
+  </data>
+  <data name="CharacterFilterPropertyName" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="CharacterFilterVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="CheckIntegrityPropertyDescription" xml:space="preserve">
+    <value>Checks the integrity of the encryption process.</value>
+  </data>
+  <data name="CheckIntegrityPropertyName" xml:space="preserve">
+    <value>Check integrity</value>
+  </data>
+  <data name="ContextPropertiesPropertyDescription" xml:space="preserve">
+    <value>List of context properties.</value>
+  </data>
+  <data name="ContextPropertiesPropertyName" xml:space="preserve">
+    <value>Context properties</value>
+  </data>
+  <data name="ContextPropertyPromoterDescription" xml:space="preserve">
+    <value>This pipeline component takes in a list of properties and promotes them in the message context.</value>
+  </data>
+  <data name="ContextPropertyPromoterIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContextPropertyPromoterIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContextPropertyPromoterName" xml:space="preserve">
+    <value>DE Context Property Promoter</value>
+  </data>
+  <data name="ContextPropertyPromoterVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="DiacriticsReplacerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DiacriticsReplacerIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DiacriticsTranscoderDescription" xml:space="preserve">
+    <value>Replaces diacritic characters with their standard equivalents. Additionally replaces &lt;SUB&gt; characters with space.</value>
+  </data>
+  <data name="DiacriticsTranscoderName" xml:space="preserve">
+    <value>DE Diacritics Character Transcoder</value>
+  </data>
+  <data name="DiacriticsTranscoderVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="EmptyContextNamespacePropertyDescription" xml:space="preserve">
+    <value>The namespace of the property to promote when the original message is empty.</value>
+  </data>
+  <data name="EmptyContextNamespacePropertyName" xml:space="preserve">
+    <value>Context property namespace</value>
+  </data>
+  <data name="EmptyContextPropertyDescription" xml:space="preserve">
+    <value>The name of the property to promote when the original message is empty.</value>
+  </data>
+  <data name="EmptyContextPropertyName" xml:space="preserve">
+    <value>Context property name</value>
+  </data>
+  <data name="EmptyMessageHandlerDescription" xml:space="preserve">
+    <value>This component handles zero bytes (empty) messages in a receive pipeline.</value>
+  </data>
+  <data name="EmptyMessageHandlerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EmptyMessageHandlerIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EmptyMessageHandlerName" xml:space="preserve">
+    <value>GT Empty Message Handler</value>
+  </data>
+  <data name="EmptyMessageHandlerValidationMessage" xml:space="preserve">
+    <value>All properties need to be provided.</value>
+  </data>
+  <data name="EmptyMessageHandlerVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="EnabledPropertyDescription" xml:space="preserve">
+    <value>If "True" the pipeline component will be executed; otherwise it will be ignore during execution.</value>
+  </data>
+  <data name="EnabledPropertyName" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="EncodingTranscoderDescription" xml:space="preserve">
+    <value>Transcodes the message stream from a source encoding to a target encoding.</value>
+  </data>
+  <data name="EncodingTranscoderIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EncodingTranscoderIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EncodingTranscoderName" xml:space="preserve">
+    <value>GT Encoding Transcoder</value>
+  </data>
+  <data name="EncodingTranscoderVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="ExtractionNodeXPathError" xml:space="preserve">
+    <value>The XPath query provided for the ExtractionNodeXPath property did not resolve to node within the instance data.  Please specify a valid XPath query for the ExtractionNodeXPath property.</value>
+  </data>
+  <data name="ExtractionNodeXPathPropertyDescription" xml:space="preserve">
+    <value>The extraction node XPath expression.</value>
+  </data>
+  <data name="ExtractionNodeXPathPropertyName" xml:space="preserve">
+    <value>Extraction node XPath expression</value>
+  </data>
+  <data name="FFSchemaResolverDisassemblerDescription" xml:space="preserve">
+    <value>This component invokes a BRE policy to determine the flat file schema.</value>
+  </data>
+  <data name="FFSchemaResolverDisassemblerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FFSchemaResolverDisassemblerIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FFSchemaResolverDisassemblerName" xml:space="preserve">
+    <value>GT Flat File Schema Resolver Disassembler</value>
+  </data>
+  <data name="FFSchemaResolverDisassemblerVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="FileNamePatternPropertyDescription" xml:space="preserve">
+    <value>The filename pattern. Accepts %SourceFileName%, %MessageID% and %datetime:format% macros.</value>
+  </data>
+  <data name="FileNamePatternPropertyName" xml:space="preserve">
+    <value>Filename pattern</value>
+  </data>
+  <data name="FileRenamerDescription" xml:space="preserve">
+    <value>Pipeline component that allows renaming the received file name using a custom pattern. It supports using  custom date/time macro to specifyany date/time format.</value>
+  </data>
+  <data name="FileRenamerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FileRenamerIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileRenamerInvalidFileNamePattern" xml:space="preserve">
+    <value>The value specified for the filename pattern property is invalid: {0}</value>
+  </data>
+  <data name="FileRenamerName" xml:space="preserve">
+    <value>GT File Renamer</value>
+  </data>
+  <data name="FileRenamerVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="IgnoreFirstRowPropertyDescription" xml:space="preserve">
+    <value>Indicates if the first row in the file should be ignored.</value>
+  </data>
+  <data name="IgnoreFirstRowPropertyName" xml:space="preserve">
+    <value>Ignore First Row</value>
+  </data>
+  <data name="InvalidActivityName" xml:space="preserve">
+    <value>The activity name is required.</value>
+  </data>
+  <data name="InvalidPolicyNamePropertyValue" xml:space="preserve">
+    <value>The policy name is required.</value>
+  </data>
+  <data name="KeyFilePathPropertyDescription" xml:space="preserve">
+    <value>The path to the file containing the private or public key.</value>
+  </data>
+  <data name="KeyFilePathPropertyName" xml:space="preserve">
+    <value>Key file path</value>
+  </data>
+  <data name="MessageBodyPartNullError" xml:space="preserve">
+    <value>{0}: inputMessage.BodyPart was null.</value>
+  </data>
+  <data name="MessageBodyPartOriginalDataStreamNullError" xml:space="preserve">
+    <value>{0}: inputMessage.BodyPart.GetOriginalDataStream was null.</value>
+  </data>
+  <data name="MessageTypeOrPolicyNameRequiredError" xml:space="preserve">
+    <value>A policy name or a message type must be provided.</value>
+  </data>
+  <data name="MessageTypePropertyDescription" xml:space="preserve">
+    <value>The message type. If not specified the BRE policy will be used to get it.</value>
+  </data>
+  <data name="MessageTypePropertyName" xml:space="preserve">
+    <value>Message Type</value>
+  </data>
+  <data name="OptimizedPropertyDescription" xml:space="preserve">
+    <value>Flag indicating whether the the archiving will use optimization.</value>
+  </data>
+  <data name="OptimizedPropertyName" xml:space="preserve">
+    <value>Optimized</value>
+  </data>
+  <data name="OutStreamNullError" xml:space="preserve">
+    <value>outStream from AddNamespaceToNode(tempStream, newNamespace) was null.</value>
+  </data>
+  <data name="PolicyMajorRevisionPropertyDescription" xml:space="preserve">
+    <value>The policy major revision number.</value>
+  </data>
+  <data name="PolicyMajorRevisionPropertyName" xml:space="preserve">
+    <value>Major revision</value>
+  </data>
+  <data name="PolicyMinorRevisionPropertyDescription" xml:space="preserve">
+    <value>The policy minor revision number.</value>
+  </data>
+  <data name="PolicyMinorRevisionPropertyName" xml:space="preserve">
+    <value>Minor revision</value>
+  </data>
+  <data name="PolicyNameInvalidError" xml:space="preserve">
+    <value>The policy name is required.</value>
+  </data>
+  <data name="PolicyNamePropertyDescription" xml:space="preserve">
+    <value>The BRE policy name to execute.</value>
+  </data>
+  <data name="PolicyNamePropertyName" xml:space="preserve">
+    <value>Policy name</value>
+  </data>
+  <data name="RaiseUnsuccessfulResolutionExceptionPropDescription" xml:space="preserve">
+    <value>True if the component should raise exceptions when the BRE policy does not indicate explicitly indicates to update the message context.</value>
+  </data>
+  <data name="RaiseUnsuccessfulResolutionExceptionPropName" xml:space="preserve">
+    <value>RaiseUnsuccessfulResolutionException</value>
+  </data>
+  <data name="RemoveByteOrderMarkDescription" xml:space="preserve">
+    <value>Value indicating whether to remove the byte order mark.</value>
+  </data>
+  <data name="RemoveByteOrderMarkPropertyName" xml:space="preserve">
+    <value>Remove byte order mark</value>
+  </data>
+  <data name="RemoveNamespaceDescription" xml:space="preserve">
+    <value>Removes all namespaces from the root node.</value>
+  </data>
+  <data name="RemoveNamespaceIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemoveNamespaceIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemoveNamespaceName" xml:space="preserve">
+    <value>GT Remove Namespace</value>
+  </data>
+  <data name="RemoveNamespaceVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="ReplacementMessagePropertyDescription" xml:space="preserve">
+    <value>Message to use when the original message is empty.</value>
+  </data>
+  <data name="ReplacementMessagePropertyName" xml:space="preserve">
+    <value>Replacement message</value>
+  </data>
+  <data name="ReplaceNamespaceDescription" xml:space="preserve">
+    <value>Pipeline component that allows replacing a namespace.</value>
+  </data>
+  <data name="ReplaceNamespaceIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReplaceNamespaceIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReplaceNamespaceName" xml:space="preserve">
+    <value>GT Replace Namespace</value>
+  </data>
+  <data name="ReplaceNamespaceVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="RetryCountPropertyDescription" xml:space="preserve">
+    <value>Specifies the number of attempts the engine resends if transmission fails.</value>
+  </data>
+  <data name="RetryCountPropertyName" xml:space="preserve">
+    <value>Retry Count</value>
+  </data>
+  <data name="RetryIntervalPropertyDescription" xml:space="preserve">
+    <value>Specifies the time interval in minutes the engine waits between retries.</value>
+  </data>
+  <data name="RetryIntervalPropertyName" xml:space="preserve">
+    <value>Retry Interval</value>
+  </data>
+  <data name="RootElementWithNamespaceError" xml:space="preserve">
+    <value>Root element already contains namespace.  Found '{0}' while attempting to set '{1}'</value>
+  </data>
+  <data name="SendPortRetryDescription" xml:space="preserve">
+    <value>Sets the RetryCount and RetryInterval message context properties to enable the BizTalk retry functionality.</value>
+  </data>
+  <data name="SendPortRetryName" xml:space="preserve">
+    <value>GT Send Port Retry</value>
+  </data>
+  <data name="SendPortRetryVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="SeparatorInvalidError" xml:space="preserve">
+    <value>The Separator property must be one of the following characters: (blank), '/' or '\'.  Please confirm that the Separator property is set correctly.</value>
+  </data>
+  <data name="SeparatorPropertyDescription" xml:space="preserve">
+    <value>The namespace separator.</value>
+  </data>
+  <data name="SeparatorPropertyName" xml:space="preserve">
+    <value>Separator</value>
+  </data>
+  <data name="SourceEncodingPropertyDescription" xml:space="preserve">
+    <value>The source encoding to use when reading the input message stream.</value>
+  </data>
+  <data name="SourceEncodingPropertyName" xml:space="preserve">
+    <value>Source encoding</value>
+  </data>
+  <data name="SSOTicketIssuerDescription" xml:space="preserve">
+    <value>Issues an SSO ticket and adds it to the message context to allow the message to be routed to ports using Single Sign-On authentication.</value>
+  </data>
+  <data name="SSOTicketIssuerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SSOTicketIssuerIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSOTicketIssuerName" xml:space="preserve">
+    <value>GT SSO Ticket Issuer</value>
+  </data>
+  <data name="SSOTicketIssuerVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="TargetEncodingPropertyDescription" xml:space="preserve">
+    <value>The target encoding to use when writing to the output message stream.</value>
+  </data>
+  <data name="TargetEncodingPropertyName" xml:space="preserve">
+    <value>Target encoding</value>
+  </data>
+  <data name="TextReaderNullError" xml:space="preserve">
+    <value>XmlTextReader Create is null.</value>
+  </data>
+  <data name="TextWriterNullError" xml:space="preserve">
+    <value>XmlTextWriter Create is null.</value>
+  </data>
+  <data name="UseAsciiArmorPropertyDescription" xml:space="preserve">
+    <value>Indicates if the encryption should use Ascii armor.</value>
+  </data>
+  <data name="UseAsciiArmorPropertyName" xml:space="preserve">
+    <value>Use Ascii armor</value>
+  </data>
+  <data name="UseCompressionPropertyDescription" xml:space="preserve">
+    <value>Indicates if the encryption should also use compression.</value>
+  </data>
+  <data name="UseCompressionPropertyName" xml:space="preserve">
+    <value>Use compression</value>
+  </data>
+  <data name="VirtualStreamNullError" xml:space="preserve">
+    <value>VirtualStream Create is null.</value>
+  </data>
+  <data name="XmlElementTranslatorDescription" xml:space="preserve">
+    <value>This pipeline component allows the translation of element names.</value>
+  </data>
+  <data name="XmlElementTranslatorElementsPropertyDescription" xml:space="preserve">
+    <value>List of xml elements to translate.</value>
+  </data>
+  <data name="XmlElementTranslatorElementsPropertyName" xml:space="preserve">
+    <value>Elements</value>
+  </data>
+  <data name="XmlElementTranslatorIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XmlElementTranslator1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XmlElementTranslatorName" xml:space="preserve">
+    <value>GT XML Element Translator</value>
+  </data>
+  <data name="XmlElementTranslatorValidationMessage" xml:space="preserve">
+    <value>The Elements collection cannot be empty.</value>
+  </data>
+  <data name="XmlElementTranslatorVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="XPathAndNamespaceEmptyError" xml:space="preserve">
+    <value>XPaths and NamespaceBase properties must not be empty when adding namespace to XML instance.  Please confirm that the XPaths and/or NamespaceBase properties are set correctly.</value>
+  </data>
+  <data name="XPathConstantsAndXPathsValidationMessage" xml:space="preserve">
+    <value>The XPathExpressions and Constants properties cannot be both empty. The component doesn't know what value to promote.</value>
+  </data>
+  <data name="XPathMatchingError" xml:space="preserve">
+    <value>XPath matching error, invalid node type: {0}</value>
+  </data>
+  <data name="XPathMultipleResultsException" xml:space="preserve">
+    <value>The XPathPropertyPromoter pipeline component encountered an error. The xpath expression "{0}" evaluated to more than one possible result.</value>
+  </data>
+  <data name="XPathNamespaceValidationMessage" xml:space="preserve">
+    <value>The Namespace cannot be empty. The component cannot promote anything if it is empty.</value>
+  </data>
+  <data name="XPathNodeNotFoundException" xml:space="preserve">
+    <value>The XPathPropertyPromoter pipeline component encountered an error. The xpath expression "{0}" did not evaluate to any result.</value>
+  </data>
+  <data name="XPathPropertiesPropDescription" xml:space="preserve">
+    <value>A list of properties to promote.</value>
+  </data>
+  <data name="XPathPropertiesPropName" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="XPathPropertiesValidationMessage" xml:space="preserve">
+    <value>The Properties collection cannot be empty. The component cannot promote anything if it is empty.</value>
+  </data>
+  <data name="XPathPropertyPromoterDescription" xml:space="preserve">
+    <value>This pipeline component takes in a list of XPath expressions or constant values, the name of the properties and the namespace the properties belong to. The component promotes the specified properties given by the name and namespace, assigning their values using the XPath expressions or constant values.</value>
+  </data>
+  <data name="XPathPropertyPromoterIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XPathPropertyPromoterIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XPathPropertyPromoterName" xml:space="preserve">
+    <value>GT XPath Property Promoter</value>
+  </data>
+  <data name="XPathPropertyPromoterVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="XPathPropertyRaiseXPathExPropDescription" xml:space="preserve">
+    <value>True if the component should raise exceptions when the specified XPath expressions fail.</value>
+  </data>
+  <data name="XPathPropertyRaiseXPathExPropName" xml:space="preserve">
+    <value>Raise xpath exceptions</value>
+  </data>
+  <data name="XPathPropertyXPathExpressionsPropDescription" xml:space="preserve">
+    <value>A list of xpath expressions that must evaluate to exactly one value each, which are then promoted. If a value is present in the "Constants" property, the corresponding xpath expression is never evaluated.</value>
+  </data>
+  <data name="XPathPropertyXPathExpressionsPropName" xml:space="preserve">
+    <value>XPathExpressions</value>
+  </data>
+  <data name="XsltFilePathPropertyDescription" xml:space="preserve">
+    <value>The location of xsl transformation file.</value>
+  </data>
+  <data name="XsltFilePathPropertyName" xml:space="preserve">
+    <value>Xslt file path</value>
+  </data>
+  <data name="XslTransformerDescription" xml:space="preserve">
+    <value>This component applies xsl transformations to XML messages.</value>
+  </data>
+  <data name="XslTransformerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XslTransformerIcon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XslTransformerInvalidXsltFilePath" xml:space="preserve">
+    <value>The xsl transformation file path cannot be empty.</value>
+  </data>
+  <data name="XslTransformerName" xml:space="preserve">
+    <value>GT Xsl Transformer</value>
+  </data>
+  <data name="XslTransformerVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="XslTransformerXsltFileNotFoundError" xml:space="preserve">
+    <value>The xsl transformation file {0} can not be found.</value>
+  </data>
+  <data name="HttpDisassemblerDescription" xml:space="preserve">
+    <value>This component creates a message from REST URL.</value>
+  </data>
+  <data name="HttpDisassemblerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FFSchemaResolverDisassemblerIcon11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HttpDisassemblerName" xml:space="preserve">
+    <value>GT HTTP REST Disassembler</value>
+  </data>
+  <data name="HttpDisassemblerVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="DocumentSpecNameDescription" xml:space="preserve">
+    <value>The Document Spec Name. Schema name of the document to be created which can be found in the schemas folder. Enter, Dull Scheman Name, Dll Name, Version , Token</value>
+  </data>
+  <data name="DocumentSpecNamePropertyName" xml:space="preserve">
+    <value>DocumentSpecName</value>
+  </data>
+  <data name="AuditDescription" xml:space="preserve">
+    <value>Pipeline component that allows posting auditing messages.</value>
+  </data>
+  <data name="AuditIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\auditcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SendPortRetryIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\sendportretryicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CloneItineraryPropertyDescription" xml:space="preserve">
+    <value>Indicate if the message shall be clone with all context property</value>
+  </data>
+  <data name="CloneItineraryPropertyName" xml:space="preserve">
+    <value>Clone Itinerary Properties</value>
+  </data>
+  <data name="CloneMessageCountPropertyDescription" xml:space="preserve">
+    <value>Indicate the number of message to be cloned</value>
+  </data>
+  <data name="CloneMessageCountPropertyName" xml:space="preserve">
+    <value>Clone Message Count</value>
+  </data>
+  <data name="ConsumeMessageDescription" xml:space="preserve">
+    <value>Pipeline component to consume the message</value>
+  </data>
+  <data name="ConsumeMessageIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\consumemessageicon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConsumeMessageIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\consumemessageicon1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConsumeMessageIcon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConsumeMessageIcon2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ConsumeMessageName" xml:space="preserve">
+    <value>DE Consume Message Component</value>
+  </data>
+  <data name="ConsumeMessageVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="DatatypeChannelIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\datatypechannelicon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeepCloneMessagePropertyDescription" xml:space="preserve">
+    <value>Indicate if the message shall be clone with all context property</value>
+  </data>
+  <data name="DeepCloneMessagePropertyName" xml:space="preserve">
+    <value>Deep Clone Message</value>
+  </data>
+  <data name="DescDocumentSpecNames" xml:space="preserve">
+    <value>Indicates Schmema(s) to use for document structure validation.</value>
+  </data>
+  <data name="DynamicRouterIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dynamicroutericon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnabledPropertyDescription1" xml:space="preserve">
+    <value>If "True" the pipeline component will be executed; otherwise it will be ignore during execution.</value>
+  </data>
+  <data name="EnabledPropertyName1" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="ErrorDocSpecNotFound" xml:space="preserve">
+    <value>Document spec {0} not found.</value>
+  </data>
+  <data name="ErrorNullInMsg" xml:space="preserve">
+    <value>Null Incoming Message</value>
+  </data>
+  <data name="ErrorNullOutMsg" xml:space="preserve">
+    <value>Null Out Message</value>
+  </data>
+  <data name="ErrorNullPart" xml:space="preserve">
+    <value>Null Part</value>
+  </data>
+  <data name="ErrorNullPC" xml:space="preserve">
+    <value>Null Pipeline Context</value>
+  </data>
+  <data name="ErrorNullProjectSystem" xml:space="preserve">
+    <value>Null Project System</value>
+  </data>
+  <data name="ErrorNullPropertyBag" xml:space="preserve">
+    <value>Property Bag is null</value>
+  </data>
+  <data name="ErrorNullValue" xml:space="preserve">
+    <value>Null Value</value>
+  </data>
+  <data name="EsbBreContextResolverDescription" xml:space="preserve">
+    <value>Pipeline component to promote/write context property from the ESB BRE Resolution</value>
+  </data>
+  <data name="EsbBreContextResolverIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageSelectorIcon1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EsbBreContextResolverName" xml:space="preserve">
+    <value>DE ESB BRE Context Property Resolver Component</value>
+  </data>
+  <data name="EsbBreContextResolverVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="EsbDispatcherWrapperDescription" xml:space="preserve">
+    <value>Pipeline component that wrap the call to the ESB Dispatcher</value>
+  </data>
+  <data name="EsbDispatcherWrapperIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DynamicRouterIcon1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EsbDispatcherWrapperName" xml:space="preserve">
+    <value>GT ESB Dispatcher Wrapper Component</value>
+  </data>
+  <data name="EsbDispatcherWrapperPropertyDescription" xml:space="preserve">
+    <value>Pipeline component that wrap the call to the ESB Dispatcher</value>
+  </data>
+  <data name="EsbDispatcherWrapperPropertyName" xml:space="preserve">
+    <value>EsbDispatcherWrapper</value>
+  </data>
+  <data name="EsbDispatcherWrapperVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="EsbItineraryTerminatorDescription" xml:space="preserve">
+    <value>Pipeline component to terminate the ESB Itinerary and consume the message according to context property</value>
+  </data>
+  <data name="EsbItineraryTerminatorIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConsumeMessageIcon11.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EsbItineraryTerminatorName" xml:space="preserve">
+    <value>GT ESB Itinerary Terminator</value>
+  </data>
+  <data name="EsbItineraryTerminatorVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="GenericProcessorDescription" xml:space="preserve">
+    <value>Generic Pipeline component to process a message</value>
+  </data>
+  <data name="GenericProcessorIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DatatypeChannelIcon1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericProcessorName" xml:space="preserve">
+    <value>GT Generic Message Processor</value>
+  </data>
+  <data name="GenericProcessorVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="HandlerAssemblyNamePropertyDescription" xml:space="preserve">
+    <value>Handler Assembly Name</value>
+  </data>
+  <data name="HandlerAssemblyNamePropertyName" xml:space="preserve">
+    <value>HandlerAssemblyName</value>
+  </data>
+  <data name="InvalidMessageChannelIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invalidmessagechannelicon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InvalidPolicyNamePropertyValue1" xml:space="preserve">
+    <value>The policy name is required.</value>
+  </data>
+  <data name="MessageDuplicateDisassemblerDescription" xml:space="preserve">
+    <value>This component duplicate the input message and invokes a BRE policy to determine the context property to alter for each message</value>
+  </data>
+  <data name="MessageDuplicateDisassemblerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SplitterIcon1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageDuplicateDisassemblerName" xml:space="preserve">
+    <value>DE Message Duplicate Disassembler</value>
+  </data>
+  <data name="MessageDuplicateDisassemblerVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="MessageFilterIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\messagefiltericon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageSelectorIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\messageselectoricon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PolicyMajorRevisionPropertyDescription1" xml:space="preserve">
+    <value>The policy major revision number.</value>
+  </data>
+  <data name="PolicyMajorRevisionPropertyName1" xml:space="preserve">
+    <value>Major revision</value>
+  </data>
+  <data name="PolicyMinorRevisionPropertyDescription1" xml:space="preserve">
+    <value>The policy minor revision number.</value>
+  </data>
+  <data name="PolicyMinorRevisionPropertyName1" xml:space="preserve">
+    <value>Minor revision</value>
+  </data>
+  <data name="PolicyNameInvalidError1" xml:space="preserve">
+    <value>The policy name is required.</value>
+  </data>
+  <data name="PolicyNamePropertyDescription1" xml:space="preserve">
+    <value>The BRE policy name to execute.</value>
+  </data>
+  <data name="PolicyNamePropertyName1" xml:space="preserve">
+    <value>Policy name</value>
+  </data>
+  <data name="PolicyNameRequiredError" xml:space="preserve">
+    <value>A policy name must be provided.</value>
+  </data>
+  <data name="PropDocumentSpecNames" xml:space="preserve">
+    <value>Document Schemas</value>
+  </data>
+  <data name="PropertyBagPropertyDescription" xml:space="preserve">
+    <value>Name value pairs to be passed to the handler. E.g. Property1=Value1&amp;Property2=Value2</value>
+  </data>
+  <data name="PropertyBagPropertyName" xml:space="preserve">
+    <value>PropertyBag</value>
+  </data>
+  <data name="RaiseUnsuccessfulResolutionExceptionPropDescription1" xml:space="preserve">
+    <value>True if the component should raise exceptions when the BRE policy does not indicate explicitly indicates to update the message context.</value>
+  </data>
+  <data name="RaiseUnsuccessfulResolutionExceptionPropName1" xml:space="preserve">
+    <value>RaiseUnsuccessfulResolutionException</value>
+  </data>
+  <data name="RequestReplyIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\requestreplyicon.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RequestResponseDescription" xml:space="preserve">
+    <value>Pipeline component to enable request to be routed back to caller as response.</value>
+  </data>
+  <data name="RequestResponseIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RequestReplyIcon1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RequestResponseName" xml:space="preserve">
+    <value>GT Request Response Component</value>
+  </data>
+  <data name="RequestResponsePropertyDescription" xml:space="preserve">
+    <value>Pipeline component to enable request to be routed back to caller as response.</value>
+  </data>
+  <data name="RequestResponsePropertyName" xml:space="preserve">
+    <value>RequestResponse</value>
+  </data>
+  <data name="RequestResponseVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="SplitterIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splittericon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XMLValidator" xml:space="preserve">
+    <value>XmlValidator</value>
+  </data>
+  <data name="XMLValidatorDesc" xml:space="preserve">
+    <value>XmlValidator component customized for returning multiple errors at one go.</value>
+  </data>
+  <data name="XmlValidatorDescription" xml:space="preserve">
+    <value>DE Extended Xml Validator Component</value>
+  </data>
+  <data name="XmlValidatorIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InvalidMessageChannelIcon1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XmlValidatorName" xml:space="preserve">
+    <value>DE Extended Xml Validator Component</value>
+  </data>
+  <data name="XmlValidatorVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="XPathQueryFilteringDescription" xml:space="preserve">
+    <value>Pipeline component to filter message base on XPATH Query</value>
+  </data>
+  <data name="XPathQueryFilteringIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageFilterIcon1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XPathQueryFilteringName" xml:space="preserve">
+    <value>GT XPATH Query Filtering Component</value>
+  </data>
+  <data name="XPathQueryFilteringVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="XPathQueryPropertyDescription1" xml:space="preserve">
+    <value>XPATH Query (1) to filter message</value>
+  </data>
+  <data name="XPathQueryPropertyDescription2" xml:space="preserve">
+    <value>XPATH Query (2) to filter message</value>
+  </data>
+  <data name="XPathQueryPropertyDescription3" xml:space="preserve">
+    <value>XPATH Query (3) to filter message</value>
+  </data>
+  <data name="XPathQueryPropertyDescription4" xml:space="preserve">
+    <value>XPATH Query (4) to filter message</value>
+  </data>
+  <data name="XPathQueryPropertyDescription5" xml:space="preserve">
+    <value>XPATH Query (5) to filter message</value>
+  </data>
+  <data name="XPathQueryPropertyName1" xml:space="preserve">
+    <value>XPath Query # 1</value>
+  </data>
+  <data name="XPathQueryPropertyName2" xml:space="preserve">
+    <value>XPath Query # 2</value>
+  </data>
+  <data name="XPathQueryPropertyName3" xml:space="preserve">
+    <value>XPath Query # 3</value>
+  </data>
+  <data name="XPathQueryPropertyName4" xml:space="preserve">
+    <value>XPath Query # 4</value>
+  </data>
+  <data name="XPathQueryPropertyName5" xml:space="preserve">
+    <value>XPath Query # 5</value>
+  </data>
+  <data name="ItineraryConfiguratorDescription" xml:space="preserve">
+    <value>This pipeline component configures teh Itinerary in the message context.</value>
+  </data>
+  <data name="ItineraryConfiguratorIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConsumeMessageIcon111.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItineraryConfiguratorName" xml:space="preserve">
+    <value>GT Itinerary Configurator</value>
+  </data>
+  <data name="ItineraryConfiguratorPropertyDescription" xml:space="preserve">
+    <value>Itinerary Configurator</value>
+  </data>
+  <data name="ItineraryConfiguratorPropertyName" xml:space="preserve">
+    <value>Itinerary Configurator Properties</value>
+  </data>
+  <data name="ItineraryConfiguratorVersion" xml:space="preserve">
+    <value>1.0</value>
+  </data>
+  <data name="ArchiverDbConnStrPropertyDescription" xml:space="preserve">
+    <value>Db ConnStr SQLCLient only</value>
+  </data>
+  <data name="ArchiverDbConnStrPropertyName" xml:space="preserve">
+    <value>Db Conn</value>
+  </data>
+  <data name="FileArchiveBackupFolderPropertyDescription" xml:space="preserve">
+    <value>File Archive Folder Path</value>
+  </data>
+  <data name="FileArchiveBackupFolderPropertyName" xml:space="preserve">
+    <value>File Archive Folder Path</value>
+  </data>
+  <data name="FileArchiveIsOverwriteFilesPropertyDescription" xml:space="preserve">
+    <value>File  Overwrite Files</value>
+  </data>
+  <data name="FileArchiveIsOverwriteFilesPropertyName" xml:space="preserve">
+    <value>File Overwrite Files</value>
+  </data>
+  <data name="FileArchiveUserDomainPropertyDescription" xml:space="preserve">
+    <value>File User Domain</value>
+  </data>
+  <data name="FileArchiveUserDomainPropertyName" xml:space="preserve">
+    <value>File User  Domain</value>
+  </data>
+  <data name="FileArchiveUserPropertyDescription" xml:space="preserve">
+    <value>File Login User</value>
+  </data>
+  <data name="FileArchiveUserPropertyName" xml:space="preserve">
+    <value>File User</value>
+  </data>
+  <data name="FileArchiveUserPwdPropertyDescription" xml:space="preserve">
+    <value>File User Pwd</value>
+  </data>
+  <data name="FileArchiveUserPwdPropertyName" xml:space="preserve">
+    <value>File User Pwd</value>
+  </data>
+  <data name="IsArchiveToDbPropertyDescription" xml:space="preserve">
+    <value>Db Archiving Enabled</value>
+  </data>
+  <data name="IsArchiveToDbPropertyName" xml:space="preserve">
+    <value>Db Archiving Enabled</value>
+  </data>
+  <data name="IsArchiveToFilePropertyDescription" xml:space="preserve">
+    <value>File Archiving Enabled</value>
+  </data>
+  <data name="IsArchiveToFilePropertyName" xml:space="preserve">
+    <value>File Archiving Enabled</value>
+  </data>
+  <data name="NoDBConnStrError" xml:space="preserve">
+    <value>The DBConnStr is not set!</value>
+  </data>
+</root>

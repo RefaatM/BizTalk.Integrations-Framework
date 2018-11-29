@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<itineraryModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="bc8abdf8-3c20-4906-9b05-ff9e636a9e64" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;XmlExporter&quot;&gt;&#xD;&#xA;    &lt;File&gt;C:\Users\MRefaat\Documents\My Itineraries\WebService2Actions.xml&lt;/File&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;DbExporter&quot;&gt;&#xD;&#xA;    &lt;Status&gt;Published&lt;/Status&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="WebService2Actions" isRequestResponse="false" exportMode="Strict" modelExporter="Exporter|Database Itinerary Exporter|{2ed729f7-1700-4755-a307-d83a358390fa}" encryptionCertificate="My;CurrentUser;" requireEncryptionCertificate="false" xmlns="http://schemas.microsoft.com/dsltools/ItineraryDsl">
+  <itineraryServices>
+    <itineraryModelHasItineraryServices Id="9a3e29f3-deeb-4836-9493-08b8a5142afc">
+      <itineraryBrokerService Id="fe6e6490-c98b-4af3-a8dc-a01c01fcbab3" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;MessagingItineraryBrokerService&quot;&gt;&#xD;&#xA;    &lt;ServiceName&gt;Microsoft.Practices.ESB.Itinerary.Services.Broker.MessagingBroker&lt;/ServiceName&gt;&#xD;&#xA;    &lt;ServiceId&gt;4810569C-8FF2-4162-86CE-47692A0B4017&lt;/ServiceId&gt;&#xD;&#xA;    &lt;ServiceType&gt;Messaging&lt;/ServiceType&gt;&#xD;&#xA;    &lt;Container&gt;&#xD;&#xA;      &lt;Name&gt;OnRamp&lt;/Name&gt;&#xD;&#xA;      &lt;Handler&gt;receiveInbound&lt;/Handler&gt;&#xD;&#xA;    &lt;/Container&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="WhichAction" isRequestResponse="true" itineraryServiceExtender="Messaging Broker|Messaging Broker Extender|{faf8de45-8506-4968-8b94-acecd95f405d}" isTrackingEnabled="true">
+        <resolvers>
+          <itineraryServiceHasResolvers Id="ec23d017-a23d-4dce-aff9-3e5dcdcabf8d">
+            <resolver Id="d91cbca6-a539-4b53-a689-dcbe3bc54996" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;MessageContext&quot; /&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="ContextResolver" resolverImplementation="CONTEXT|MessageContext Resolver Extension|{67476acb-c815-49bb-a735-0a8d2a4a5731}" />
+          </itineraryServiceHasResolvers>
+        </resolvers>
+        <filters>
+          <itineraryBrokerServiceHasFilters Id="c12a630b-1423-4f00-bf7d-91c8fc09dc1c">
+            <filter Id="4514ab87-fa7b-4807-8653-048b3c6e843c" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;XPathFilter&quot;&gt;&#xD;&#xA;    &lt;Expression&gt;//Property[@name='Action']='CreateServiceAgreement' &lt;/Expression&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="CreateServiceAgreement" filterImplementation="XPATH|XPath Filter|{4439ec79-f350-48cb-a359-b881120d2417}" />
+          </itineraryBrokerServiceHasFilters>
+          <itineraryBrokerServiceHasFilters Id="b748a3d9-ff85-4720-98cf-7b5abdc4781e">
+            <filter Id="f92b67eb-1686-41f4-956d-08f7e69c3f42" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;XPathFilter&quot;&gt;&#xD;&#xA;    &lt;Expression&gt;//Property[@name='Action']='CancelServiceAgreement' &lt;/Expression&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="CancelServiceAgreement" filterImplementation="XPATH|XPath Filter|{4439ec79-f350-48cb-a359-b881120d2417}" />
+          </itineraryBrokerServiceHasFilters>
+        </filters>
+        <itineraryBrokerOutPorts>
+          <itineraryBrokerServiceHasItineraryBrokerOutPorts Id="0808e1c3-edc0-40f3-8351-da3130f641e7">
+            <itineraryBrokerOutPort Id="dd8c7749-589e-40d2-89cb-ade3a0be7ea1" name="CreateServiceAgreement" order="0">
+              <filter>
+                <itineraryBrokerOutPortReferencesFilter Id="1eb69fdd-4cdd-4178-8d56-9e06051f78c9">
+                  <filterMoniker Id="4514ab87-fa7b-4807-8653-048b3c6e843c" />
+                </itineraryBrokerOutPortReferencesFilter>
+              </filter>
+              <resolver>
+                <itineraryBrokerOutPortReferencesResolver Id="ef477d8e-7424-4f6f-9032-7b8a25914b5a">
+                  <resolverMoniker Id="d91cbca6-a539-4b53-a689-dcbe3bc54996" />
+                </itineraryBrokerOutPortReferencesResolver>
+              </resolver>
+            </itineraryBrokerOutPort>
+          </itineraryBrokerServiceHasItineraryBrokerOutPorts>
+          <itineraryBrokerServiceHasItineraryBrokerOutPorts Id="fee63f87-693d-4dea-8a37-99972a4326a0">
+            <itineraryBrokerOutPort Id="6b5a8633-bf34-4e83-b5b2-34f917f6e776" name="CancelServiceAgreement" order="1">
+              <filter>
+                <itineraryBrokerOutPortReferencesFilter Id="1c2185d1-4609-4b23-8d9a-f9f13b3a612d">
+                  <filterMoniker Id="f92b67eb-1686-41f4-956d-08f7e69c3f42" />
+                </itineraryBrokerOutPortReferencesFilter>
+              </filter>
+              <resolver>
+                <itineraryBrokerOutPortReferencesResolver Id="38b0727e-3f36-4db5-be73-d73fa63b1c1b">
+                  <resolverMoniker Id="d91cbca6-a539-4b53-a689-dcbe3bc54996" />
+                </itineraryBrokerOutPortReferencesResolver>
+              </resolver>
+            </itineraryBrokerOutPort>
+          </itineraryBrokerServiceHasItineraryBrokerOutPorts>
+        </itineraryBrokerOutPorts>
+      </itineraryBrokerService>
+    </itineraryModelHasItineraryServices>
+    <itineraryModelHasItineraryServices Id="267d0918-faef-4b7e-b4b8-045e84979d2a">
+      <itineraryService Id="50c6f0e9-0dbe-4272-b642-c5dbc6ba6d65" objectExtenderContainer="" name="ItineraryService1" isRequestResponse="false" itineraryServiceExtender="" isTrackingEnabled="false" />
+    </itineraryModelHasItineraryServices>
+  </itineraryServices>
+  <onRamp>
+    <itineraryModelHasOnRamp Id="cff32191-3f09-4143-9087-d6d0c99eb088">
+      <onRamp Id="705fbf27-e14c-4e7b-8f95-f5a2310102e4" objectExtenderContainer="&lt;?xml version=&quot;1.0&quot;?&gt;&#xD;&#xA;&lt;ObjectExtenderContainer xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&#xD;&#xA;  &lt;ObjectExtenders xsi:type=&quot;OnRampExtender&quot;&gt;&#xD;&#xA;    &lt;BiztalkApplication&gt;GT.BizTalk.WebServices&lt;/BiztalkApplication&gt;&#xD;&#xA;    &lt;ReceivePort&gt;WcfReceivePort_DAXFSAEnrollementsCancellations/BounceFacade&lt;/ReceivePort&gt;&#xD;&#xA;    &lt;IsTwoWay&gt;true&lt;/IsTwoWay&gt;&#xD;&#xA;  &lt;/ObjectExtenders&gt;&#xD;&#xA;&lt;/ObjectExtenderContainer&gt;" name="OnRamp" extender="On-Ramp|On-Ramp ESB Extender|{3d237d78-fd66-46cd-b892-5a6e1e8ea06d}">
+        <receiveHandlers>
+          <esbServiceReferencesReceiveHandlers Id="07846359-b804-47e7-8367-793628d57e78">
+            <itineraryBrokerServiceMoniker Id="fe6e6490-c98b-4af3-a8dc-a01c01fcbab3" />
+          </esbServiceReferencesReceiveHandlers>
+        </receiveHandlers>
+        <request>
+          <onRampReferencesRequest Id="f23c50c7-e5e4-4409-b7a1-f0344f6e4628">
+            <itineraryBrokerServiceMoniker Id="fe6e6490-c98b-4af3-a8dc-a01c01fcbab3" />
+          </onRampReferencesRequest>
+        </request>
+      </onRamp>
+    </itineraryModelHasOnRamp>
+  </onRamp>
+</itineraryModel>

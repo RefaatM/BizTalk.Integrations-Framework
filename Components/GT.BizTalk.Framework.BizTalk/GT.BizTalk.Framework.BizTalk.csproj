@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C5E448C-6F44-4769-BC76-9E5FD7DBCBE5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GT.BizTalk.Framework.BizTalk</RootNamespace>
+    <AssemblyName>GT.BizTalk.Framework.BizTalk</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\..\..\..\..\..\..\Shared\downloads\DE_CSharp_Managed_Rules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\GT.BizTalk.Framework.BizTalk.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>GT.BizTalk.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Insight.Database, Version=5.2.7.0, Culture=neutral, PublicKeyToken=f35c6ef87e515afc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Insight.Database.Core.5.2.7\lib\NET45\Insight.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Insight.Database.Configuration, Version=5.2.7.0, Culture=neutral, PublicKeyToken=f35c6ef87e515afc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Insight.Database.5.2.7\lib\NET45\Insight.Database.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Insight.Database.Providers.Default, Version=5.2.7.0, Culture=neutral, PublicKeyToken=f35c6ef87e515afc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Insight.Database.5.2.7\lib\NET45\Insight.Database.Providers.Default.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Bam.EventObservation, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Tracking\Microsoft.BizTalk.Bam.EventObservation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Component.Utilities, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.BizTalk.Component.Utilities\3.0.1.0__31bf3856ad364e35\Microsoft.BizTalk.Component.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Microsoft.BizTalk.GlobalPropertySchemas.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Interop.SSOClient, Version=9.0.1000.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.BizTalk.Interop.SSOClient\v4.0_9.0.1000.0__31bf3856ad364e35\Microsoft.BizTalk.Interop.SSOClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Messaging, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Microsoft.BizTalk.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Microsoft.BizTalk.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline.Components, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Pipeline Components\Microsoft.BizTalk.Pipeline.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Streaming, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Microsoft.BizTalk.Streaming.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ESB.GlobalPropertyContext, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.RuleEngine, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Common Files\Microsoft BizTalk\Microsoft.RuleEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft BizTalk Server 2013 R2\Microsoft.XLANGs.BaseTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniqueNamespace.SqlBuilder">
+      <HintPath>..\..\packages\UniqueNamespace.SqlBuilder.2.0.2\lib\UniqueNamespace.SqlBuilder.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archive\ArchiveConstants.cs" />
+    <Compile Include="Archive\IMessageArchiveProvider.cs" />
+    <Compile Include="Archive\MessageArchiver.cs" />
+    <Compile Include="Archive\UNCAccessWithCredentials.cs" />
+    <Compile Include="Configuration\SSOConfigHelper.cs" />
+    <Compile Include="Configuration\SSOConfigurationAttribute.cs" />
+    <Compile Include="Configuration\SSOConfigurationLocator.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="FileNameMacroHelper.cs" />
+    <Compile Include="GlobalAssemblyInfo.cs" />
+    <Compile Include="IBasePropertyBagExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPropertyBagExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\MessageHelper.cs" />
+    <Compile Include="Pipeline\IIBaseMessageProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\BRETrackingResources.Designer.cs">
+      <DependentUpon>BRETrackingResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Serialization\ContextProperty.cs" />
+    <Compile Include="Serialization\ItineraryProperty.cs" />
+    <Compile Include="Serialization\PropertyBag.cs" />
+    <Compile Include="Serialization\XmlPropertyCollectionSerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="GT.BizTalk.snk" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\BRETrackingResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BRETrackingResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Schemas\GT.BizTalk.FrameWork.GlobalPropertySchemas\GT.BizTalk.Framework.GlobalPropertySchemas.btproj">
+      <Project>{4321813b-f52b-4ede-a05f-b93d1535489d}</Project>
+      <Name>GT.BizTalk.Framework.GlobalPropertySchemas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GT.BizTalk.Framework.Core\GT.BizTalk.Framework.Core.csproj">
+      <Project>{c0b4f29b-5199-4c06-949a-03d134c325c1}</Project>
+      <Name>GT.BizTalk.Framework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BAM\" />
+    <Folder Include="BRE\" />
+    <Folder Include="Tracing\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>CALL "$(DevEnvDir)..\Tools\vsvars32.bat" &gt; NUL
+GACUTIL /u "$(TargetName)"
+GACUTIL /if "$(TargetPath)"
+XCOPY "$(TargetPath)" "$(SolutionDir)..\..\Libs\$(Configuration)\DE.DAXFSA.Framework\" /I /R /Y
+GACUTIL /u "Insight.Database"
+GACUTIL /if "$(SolutionDir)packages\Insight.Database.Core.5.2.5\lib\NET45\Insight.Database.dll"
+GACUTIL /u "Insight.Database.Configuration"
+GACUTIL /if "$(SolutionDir)packages\Insight.Database.5.2.7\lib\NET45\Insight.Database.Configuration.dll"
+GACUTIL /u "Insight.Database.Providers.Default"
+GACUTIL /if "$(SolutionDir)packages\Insight.Database.5.2.7\lib\NET45\Insight.Database.Providers.Default.dll"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
