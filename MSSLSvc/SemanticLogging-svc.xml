@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns="http://schemas.microsoft.com/practices/2013/entlib/semanticlogging/etw"
+			   xmlns:etw="http://schemas.microsoft.com/practices/2013/entlib/semanticlogging/etw"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="urn:DE.DAXFSA.Framework.SemanticLogging DE.DAXFSA.Framework.SemanticLogging.xsd http://schemas.microsoft.com/practices/2013/entlib/semanticlogging/etw SemanticLogging-svc.xsd">
+  
+  <!-- Optional settings for fine tuning performance and Trace Event Session identification-->
+  <traceEventService/>
+
+  <!-- Sinks reference definitions used by this host to listen ETW events -->
+  <sinks>
+       <!-- This sink should be used only in development for debugging purposes  
+	   <flatFileSink name="svcRuntime" fileName="Logs\SemanticLogging-svc.runtime.log" >
+      <sources>
+        <eventSource name="DE-Unify" level="LogAlways"/>
+      </sources>
+      <eventTextFormatter header="******" />
+    </flatFileSink> -->
+	
+  <rollingFlatFileSink name="FlatFile" 
+      fileName="D:\UnifyTestFolders\Logging\DE-DAXSFSA-rtpwdbdvdax02.log" 
+      timeStampPattern="yyyy-MM-dd" 
+      rollSizeKB="10000" 
+      rollFileExistsBehavior="Increment"
+      rollInterval="Day">
+      <sources>
+        <eventSource name="DE-Unify" level="LogAlways" />
+      </sources>
+   <delimitedEventTextFormatter xmlns="urn:DE.DAXFSA.Framework.SemanticLogging"
+        delimiter=" " verbosityThreshold="Verbose" dateTimeFormat="yyyy-MM-dd HH:mm:ss" />
+ 	</rollingFlatFileSink>   
+	
+  <eventLogSink xmlns="urn:DE.DAXFSA.Framework.SemanticLogging"
+	  name="eventLog">
+	  <etw:sources>
+        <etw:eventSource name="DE-Unify" level="Warning" />
+      </etw:sources>
+	  <eventLogEventTextFormatter xmlns="urn:DE.DAXFSA.Framework.SemanticLogging"
+        verbosityThreshold="Error" dateTimeFormat="yyyy-MM-dd HH:mm:ss" />
+	</eventLogSink> 
+	
+    <emailSink xmlns="urn:DE.DAXFSA.Framework.SemanticLogging"
+	  name="Email" 
+	  from="Moustafa.Refaat@DirectEnergy.com"
+	  to="Moustafa.Refaat@DirectEnergy.com"
+	  subject="BizTalk Notification"
+	  templateFilePath="ErrorNotification.html">
+      <etw:sources>
+        <etw:eventSource name="DE-Unify" level="Error" />
+      </etw:sources>
+	  <htmlEventTextFormatter xmlns="urn:DE.DAXFSA.Framework.SemanticLogging"
+        verbosityThreshold="Warning" dateTimeFormat="yyyy-MM-dd HH:mm:ss" />
+	</emailSink>
+
+    <consoleSink name="ConsoleEventSink">
+      <sources>
+        <eventSource name="DE-Unify" level="LogAlways" />
+      </sources>
+	   <delimitedEventTextFormatter xmlns="urn:DE.DAXFSA.Framework.SemanticLogging"
+        delimiter=" " verbosityThreshold="Verbose" dateTimeFormat="yyyy-MM-dd HH:mm:ss" />
+      </consoleSink>
+
+  </sinks>
+
+</configuration>

@@ -1,0 +1,26 @@
+﻿Installing assembly 'D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.exe
+   logfile = D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.InstallLog
+Installing service Enterprise Library Semantic Logging Service...
+Service Enterprise Library Semantic Logging Service has been successfully installed.
+Creating EventLog source Enterprise Library Semantic Logging Service in log Application...
+Committing assembly 'D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.exe
+   logfile = D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.InstallLog
+Installing assembly 'D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.exe
+   logfile = D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.InstallLog
+Installing service Enterprise Library Semantic Logging Service...
+Service Enterprise Library Semantic Logging Service has been successfully installed.
+Creating EventLog source Enterprise Library Semantic Logging Service in log Application...
+Committing assembly 'D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.exe
+   logfile = D:\DE_Unify\DE_Unify_CMMI\BizTalk\Main\Framework\DE.DAXFSA.FrameWork\MSSLSvc\SemanticLogging-svc.InstallLog
